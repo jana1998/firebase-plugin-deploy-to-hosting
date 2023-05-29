@@ -1,0 +1,26 @@
+{
+  "name": "deploy-hosting",
+  "description": "Deploy to firebase hosting",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "googleapis": "^118.0.0",
+    "jszip": "^3.10.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "mocha": "mocha '**/*.spec.js'",
+    "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)"
+  },
+  "private": true
+}
